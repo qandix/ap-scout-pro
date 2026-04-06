@@ -1,6 +1,6 @@
 Privacy Policy — AP-Scout Pro
 Last updated: April 5, 2026
-Developer: Qandix
+Developer: QANDIX
 Contact: support@qandix.com
 
 1. INFORMATION WE COLLECT
@@ -66,5 +66,4 @@ app after changes constitutes acceptance of the updated policy.
 
 7. CONTACT
 
-For privacy questions or requests, contact:
-support@qandix.com
+For privacy questions or requests, contact: support@qandix.com
