@@ -1,5 +1,5 @@
 Privacy Policy — AP-Scout Pro
-Last updated: April 5, 2026
+Last updated: April 8, 2026
 Developer: QANDIX
 Contact: support@qandix.com
 
@@ -27,12 +27,16 @@ The following permissions are used locally only:
   Used to initiate Wi-Fi scans and read scan results. No data
   is transmitted externally.
 
-2. DATA STORAGE
+2. DATA STORAGE & ENCRYPTION
 
-• Survey data, AP databases, and scan snapshots are stored locally
-  in the app's private cache directory on your device.
-• Exported files (CSV, Excel) are written to the app cache and shared
-  only when you explicitly trigger an export and choose a destination.
+• The AP Database is encrypted on-device using AES-256-GCM with
+  PBKDF2 key derivation (600,000 iterations). The encryption key
+  is derived from a user-provided passphrase and is held only in
+  volatile memory — never stored on disk.
+• Survey data and scan snapshots are stored locally in the app's
+  private cache directory on your device.
+• Exported files (CSV, Excel) can be optionally encrypted with
+  AES-256 before sharing. Passwords are never saved.
 • No cloud backup, no sync, no remote storage.
 
 3. THIRD-PARTY SERVICES
@@ -44,7 +48,7 @@ AP-Scout Pro does NOT integrate:
 • Any external API services that receive user data
 
 The only third-party code used is open-source libraries (Apache POI,
-Jetpack Compose, AndroidX) running entirely on-device.
+zip4j, Jetpack Compose, AndroidX) running entirely on-device.
 
 4. NETWORK TOOLS — USER CONSENT
 
