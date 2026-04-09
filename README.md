@@ -1,5 +1,5 @@
 Privacy Policy — AP-Scout Pro
-Last updated: April 8, 2026
+Last updated: April 9, 2026
 Developer: QANDIX
 Contact: support@qandix.com
 
