@@ -27,6 +27,15 @@ The following permissions are used locally only:
   Used to initiate Wi-Fi scans and read scan results. No data
   is transmitted externally.
 
+• Floor Plan Images (Heat Map Survey):
+  The Heat Map Survey feature allows you to import a floor plan image
+  from your device using the Android system file picker (Storage Access
+  Framework). No file permission is requested — the system picker grants
+  access only to the single file you select. The imported image is
+  compressed and stored solely in the app's private internal storage
+  (never in a world-readable location). Images are never transmitted
+  externally, never shared, and are deleted when you delete the config.
+
 2. DATA STORAGE & ENCRYPTION
 
 • The AP Database is encrypted on-device using AES-256-GCM with
