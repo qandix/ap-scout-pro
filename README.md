@@ -70,4 +70,5 @@ app after changes constitutes acceptance of the updated policy.
 
 7. CONTACT
 
-For privacy questions or requests, contact: support@qandix.com
+For privacy questions or requests, contact:
+support@qandix.com
