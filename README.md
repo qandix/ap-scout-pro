@@ -22,6 +22,8 @@ The following permissions are used locally only:
   Used only by the Utility (Network Tools) feature to perform
   on-demand network diagnostics (Ping, DNS, HTTP Check, etc.)
   at the user's explicit request. No background connections are made.
+  Also used to communicate with Google Play Billing for Heat Map
+  subscription verification.
 
 • Wi-Fi State (ACCESS_WIFI_STATE, CHANGE_WIFI_STATE):
   Used to initiate Wi-Fi scans and read scan results. No data
@@ -57,7 +59,8 @@ AP-Scout Pro does NOT integrate:
 • Any external API services that receive user data
 
 The only third-party code used is open-source libraries (Apache POI,
-zip4j, Jetpack Compose, AndroidX) running entirely on-device.
+zip4j, Jetpack Compose, AndroidX) running entirely on-device, and
+Google Play Billing Library (for Heat Map subscription management).
 
 4. NETWORK TOOLS — USER CONSENT
 
