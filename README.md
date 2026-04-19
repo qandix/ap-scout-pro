@@ -29,6 +29,19 @@ The following permissions are used locally only:
   Used to initiate Wi-Fi scans and read scan results. No data
   is transmitted externally.
 
+• Network State (ACCESS_NETWORK_STATE, CHANGE_NETWORK_STATE):
+  Used to read the current network connectivity state (e.g., whether
+  the device is connected to Wi-Fi or mobile data). No personal data
+  is collected or transmitted. CHANGE_NETWORK_STATE is declared for
+  Network Tools socket operations but does not modify user network
+  settings without explicit user action.
+
+• Physical Activity (ACTIVITY_RECOGNITION):
+  Required on Android 10+ to access the hardware Step Detector sensor.
+  Used only to count steps during Tracking to estimate distance to the
+  target AP. Step counts are used in-memory only and are never stored
+  or transmitted.
+
 • Floor Plan Images (Heat Map Survey):
   The Heat Map Survey feature allows you to import a floor plan image
   from your device using the Android system file picker (Storage Access
