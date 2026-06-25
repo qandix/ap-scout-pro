@@ -1,99 +1,89 @@
 Privacy Policy — AP-Scout Pro
-Last updated: April 9, 2026
-Developer: QANDIX
-Contact: support@qandix.com
+Package: com.qandix.apscout
+Developer: Qandix
+Contact: support.qandix.com
+Last updated: 2026-06-25
+
+
+AP-Scout Pro ("the App") is developed by Qandix. This Privacy Policy explains
+what information the App accesses, how it is used, and how it is protected.
+
 
 1. INFORMATION WE COLLECT
 
-AP-Scout Pro does NOT collect, transmit, or store any personal data
-on external servers. All data processing occurs entirely on your device.
+The App accesses the following data solely on your device:
 
-The following permissions are used locally only:
+• Wi-Fi scan data (BSSID, SSID, RSSI, channel, band) — used for Scan, Track,
+  Survey, and Roaming Analysis. Stored locally on device only.
+• GPS / location coordinates — used to geotag signal readings in Site Survey.
+  Stored locally on device only.
+• Sensor data (accelerometer, magnetometer, gyroscope) — used for the Tracking
+  compass heading. Not stored.
+• Floor plan images — the floor-plan background you upload in Survey (paid).
+  Stored locally on device only.
+• Survey session data — used for export and review. Stored locally on device only.
+• AP Database (CSV import) — used to display hostnames instead of BSSIDs.
+  Stored locally on device only.
 
-• Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION):
-  Required by Android 14+ to retrieve Wi-Fi scan results including
-  SSID and BSSID values. Location data is used only in-memory to
-  display nearby Access Points and is never stored or transmitted.
+We do not collect, transmit, or store any personal data on external servers.
 
-• Nearby Wi-Fi Devices (NEARBY_WIFI_DEVICES):
-  Required to scan for Wi-Fi Access Points on Android 13+.
 
-• Internet (INTERNET):
-  Used only by the Utility (Network Tools) feature to perform
-  on-demand network diagnostics (Ping, DNS, HTTP Check, etc.)
-  at the user's explicit request. No background connections are made.
-  Also used to communicate with Google Play Billing for Heat Map
-  subscription verification.
+2. THIRD-PARTY SERVICES
 
-• Wi-Fi State (ACCESS_WIFI_STATE, CHANGE_WIFI_STATE):
-  Used to initiate Wi-Fi scans and read scan results. No data
-  is transmitted externally.
+The App integrates the following Google services, each governed by Google's
+Privacy Policy (https://policies.google.com/privacy):
 
-• Network State (ACCESS_NETWORK_STATE, CHANGE_NETWORK_STATE):
-  Used to read the current network connectivity state (e.g., whether
-  the device is connected to Wi-Fi or mobile data). No personal data
-  is collected or transmitted. CHANGE_NETWORK_STATE is declared for
-  Network Tools socket operations but does not modify user network
-  settings without explicit user action.
+• Google Play Billing — Survey paid-features monthly subscription payment processing.
+• Google Play Integrity API — app license verification.
 
-• Physical Activity (ACTIVITY_RECOGNITION):
-  Required on Android 10+ to access the hardware Step Detector sensor.
-  Used only to count steps during Tracking to estimate distance to the
-  target AP. Step counts are used in-memory only and are never stored
-  or transmitted.
+We do not receive, store, or process any payment card information. All billing is
+handled exclusively by Google Play.
 
-• Floor Plan Images (Heat Map Survey):
-  The Heat Map Survey feature allows you to import a floor plan image
-  from your device using the Android system file picker (Storage Access
-  Framework). No file permission is requested — the system picker grants
-  access only to the single file you select. The imported image is
-  compressed and stored solely in the app's private internal storage
-  (never in a world-readable location). Images are never transmitted
-  externally, never shared, and are deleted when you delete the config.
 
-2. DATA STORAGE & ENCRYPTION
+3. PERMISSIONS USED
 
-• The AP Database is encrypted on-device using AES-256-GCM with
-  PBKDF2 key derivation (600,000 iterations). The encryption key
-  is derived from a user-provided passphrase and is held only in
-  volatile memory — never stored on disk.
-• Survey data and scan snapshots are stored locally in the app's
-  private cache directory on your device.
-• Exported files (CSV, Excel) can be optionally encrypted with
-  AES-256 before sharing. Passwords are never saved.
-• No cloud backup, no sync, no remote storage.
+• ACCESS_WIFI_STATE — read Wi-Fi scan results.
+• CHANGE_WIFI_STATE — trigger Wi-Fi scans.
+• ACCESS_FINE_LOCATION — required by Android for Wi-Fi scanning (API 34+) and GPS
+  for Site Survey.
+• ACCESS_COARSE_LOCATION — required by Android for Wi-Fi scanning.
+• NEARBY_WIFI_DEVICES — required on Android 13+ for Wi-Fi scanning.
 
-3. THIRD-PARTY SERVICES
+Location data is used only within the App and is never transmitted externally.
 
-AP-Scout Pro does NOT integrate:
-• Analytics SDKs (no Firebase Analytics, no Crashlytics, no Mixpanel)
-• Advertising networks (no AdMob, no ads of any kind)
-• Social media SDKs
-• Any external API services that receive user data
 
-The only third-party code used is open-source libraries (Apache POI,
-zip4j, Jetpack Compose, AndroidX) running entirely on-device, and
-Google Play Billing Library (for Heat Map subscription management).
+4. DATA STORAGE AND SECURITY
 
-4. NETWORK TOOLS — USER CONSENT
+• All app data is stored in the app's private internal storage (filesDir / cacheDir).
+• Data is not accessible to other apps.
+• No cloud sync, no remote backup.
+• Uninstalling the App removes all stored data.
 
-The Utility (Network Tools) feature requires explicit user consent
-before first use. All network operations are initiated manually by
-the user and directed only at hosts/addresses the user specifies.
-No automated or background network requests are made.
 
-5. CHILDREN'S PRIVACY
+5. SUBSCRIPTION DATA
 
-AP-Scout Pro is a professional enterprise tool not directed at
-children under 13. We do not knowingly collect data from children.
+The Survey paid features (floor-plan background, on-map point placement with
+pinch-to-zoom, AP Check Points, point aliases, and up to 5000 points) require a
+monthly subscription through Google Play. We do not collect or store payment card
+information, billing address, or purchase history beyond what Google Play provides
+to verify subscription status.
 
-6. CHANGES TO THIS POLICY
 
-We may update this Privacy Policy from time to time. Changes will
-be reflected in the "Last updated" date above. Continued use of the
-app after changes constitutes acceptance of the updated policy.
+6. CHILDREN'S PRIVACY
 
-7. CONTACT
+This App is designed for professional network engineers and is not intended for
+use by children under 13.
 
-For privacy questions or requests, contact:
-support@qandix.com
+
+7. CHANGES TO THIS POLICY
+
+We may update this Privacy Policy from time to time. Changes will be posted at the
+same URL with an updated "Last updated" date.
+
+
+8. CONTACT
+
+Email: support.qandix.com
+
+
+Last updated: 2026-06-25 | AP-Scout Pro v6.0.0
