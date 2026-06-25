@@ -1,7 +1,7 @@
 Privacy Policy — AP-Scout Pro
 Package: com.qandix.apscout
 Developer: Qandix
-Contact: support.qandix.com
+Contact: support@qandix.com
 Last updated: 2026-06-25
 
 
@@ -83,7 +83,7 @@ same URL with an updated "Last updated" date.
 
 8. CONTACT
 
-Email: support.qandix.com
+Email: support@qandix.com
 
 
 Last updated: 2026-06-25 | AP-Scout Pro v6.0.0
