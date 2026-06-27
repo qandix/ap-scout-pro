@@ -25,7 +25,9 @@ The App accesses the following data solely on your device:
 • AP Database (CSV import) — used to display hostnames instead of BSSIDs.
   Stored locally on device only.
 
-We do not collect, transmit, or store any personal data on external servers.
+We do not collect, transmit, or store any personal data on external servers, with one
+optional exception you control: the Network Overview "Public IP" lookup (off by default)
+contacts ipinfo.io only when you tap it — see THIRD-PARTY SERVICES below.
 
 
 2. THIRD-PARTY SERVICES
@@ -38,6 +40,14 @@ Privacy Policy (https://policies.google.com/privacy):
 
 We do not receive, store, or process any payment card information. All billing is
 handled exclusively by Google Play.
+
+Public IP lookup (optional, off by default): when you tap "Look up Public IP" in
+Network Overview, the App makes a single HTTPS request to ipinfo.io (fallback
+api.ipify.org) to show your public IP address, ISP and approximate location. Those
+services necessarily see your IP address, governed by their own privacy policies
+(https://ipinfo.io/privacy-policy). This is the only feature that contacts a
+non-Google external service, it never runs on its own, and no other personal data
+is sent.
 
 
 3. PERMISSIONS USED
@@ -86,4 +96,4 @@ same URL with an updated "Last updated" date.
 Email: support@qandix.com
 
 
-Last updated: 2026-06-25 | AP-Scout Pro v6.0.0
+Last updated: 2026-06-27 | AP-Scout Pro v6.0.7
