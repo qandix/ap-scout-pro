@@ -23,7 +23,7 @@ The App accesses the following data **solely on your device**:
 | GPS / location coordinates | Site Survey — geotag signal readings | Locally on device only |
 | Sensor data (accelerometer, magnetometer, gyroscope) | Tracking compass heading | Not stored |
 | Floor plan images | Survey (paid) — floor-plan background uploaded by user | Locally on device only |
-| Survey session data | Export and review. Includes archive copies the App writes when you replace a survey with a portable survey file | Locally on device only |
+| Survey session data | Export and review | Locally on device only |
 | AP Database (CSV import) | Display hostnames instead of BSSIDs | Locally on device only |
 | Network Tools activity | On-demand diagnostics (Ping, DNS, Traceroute, Port Check, HTTP Check, TLS Inspector, TCP Throughput, Latency Trend, Subnet Calculator, Wake-on-LAN, NTP, ARP Table, Network Overview, LAN Discovery) to hosts/networks you specify | Not stored; not transmitted off-device |
 | Diagnostic activity logs (app events only — no personal data) | Field diagnostics via the Logs menu — records the App's own activity (a built-in Logcat replacement). Recording is **opt-in and OFF by default**: nothing is recorded until you turn on the switch in the Logs menu | Locally on device only, encrypted (AES-256-GCM); you can view, export, or delete them anytime via the Logs menu |
