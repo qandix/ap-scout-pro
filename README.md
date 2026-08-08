@@ -2,7 +2,7 @@
 **Package:** `com.qandix.apscout`
 **Developer:** Qandix
 **Contact:** support@qandix.com
-**Last updated:** 2026-08-08
+**Last updated:** 2026-08-09
 
 ---
 
@@ -98,4 +98,4 @@ We may update this Privacy Policy from time to time. Changes will be posted at t
 
 ---
 
-*Last updated: 2026-08-08 | AP-Scout Pro v6.0.34*
+*Last updated: 2026-08-09 | AP-Scout Pro v6.0.35*
